@@ -1,4 +1,3 @@
-
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
@@ -17,6 +16,8 @@ module.exports = {
   },
   plugins: ['react-refresh'],
   rules: {
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-floating-promises': 'off',
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
