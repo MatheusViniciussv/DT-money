@@ -5,7 +5,6 @@ import { Transaction } from './pages/Transactions'
 import { TransactionsProvider } from './contexts/TransactionsContext'
 
 export function App() {
-
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
@@ -13,7 +12,6 @@ export function App() {
       <TransactionsProvider>
         <Transaction />
       </TransactionsProvider>
-
     </ThemeProvider>
   )
 }
